@@ -1,6 +1,6 @@
 # Colocando como working directory
 setwd("~/A2")
-
+# testando aqui as diferenÃ§as com o git
 # Carregando pacotes
 library(tidyverse)
 library(stringr)
@@ -85,7 +85,7 @@ A2_apr_limpo4 = A2_apr_limpo3 %>% str_remove_all("\\<L0.*\\>") %>%
   str_replace_all("OH", "") %>%
   str_remove_all("\\<PN[0-9]+[:alpha:]+\\>")
 
-#remover espaços em branco extras e linhas em branco
+#remover espaï¿½os em branco extras e linhas em branco
 A2_apr_limpo5 <- A2_apr_limpo4 %>%
   str_remove_all("\\n") %>% 
   str_remove_all("^ +$") %>%
